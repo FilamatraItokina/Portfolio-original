@@ -45,6 +45,7 @@ body {
     animation: introBoite 2s ease-out;
     max-height: 560px;
     overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .head {
@@ -230,7 +231,7 @@ img {
 .Ptitre {
     color: #F8F4EB;
     position: relative;
-    left: 85px;
+    left: 75px;
 }
 
 .images {
