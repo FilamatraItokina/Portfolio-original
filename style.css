@@ -43,6 +43,8 @@ body {
     border: solid 2px #046307;
     border-radius: 15px;
     animation: introBoite 2s ease-out;
+    max-height: 560px;
+    overflow-y: auto;
 }
 
 .head {
@@ -223,4 +225,25 @@ img {
     100%{
         transform: translateY(0);
     }
+}
+
+.Ptitre {
+    color: #F8F4EB;
+    position: relative;
+    left: 85px;
+}
+
+.images {
+    display: flex;
+    justify-content: space-evenly;
+    background: #F8F4EB;
+    padding: 0 0 10px 0;
+    border-radius: 20px;
+}
+
+.BoxPara3 {
+    background: #046307;
+    padding: 2px 10px 15px 15px;
+    border-radius: 20px;
+    margin-top: 20px;
 }
