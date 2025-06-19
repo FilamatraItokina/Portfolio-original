@@ -9,6 +9,7 @@ body {
     border-radius: 10px;
     background: #046307;
     margin-bottom: 10px;
+    animation: introNom 2s ease-out;
 }
 
 .boiteN {
@@ -41,6 +42,7 @@ body {
     padding: 0 10px 10px 10px;
     border: solid 2px #046307;
     border-radius: 15px;
+    animation: introBoite 2s ease-out;
 }
 
 .head {
@@ -191,6 +193,34 @@ img {
     }
     100%{
         opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes introBoite {
+    0%{
+        transform: translateY(-140px);
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+        transform: translateY(-140px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+@keyframes introNom {
+    0%{
+        transform: translateY(-150px);
+        opacity: 0;
+    }
+    50%{
+        transform: translateY(-150px);
+        opacity: 1;
+    }
+    100%{
         transform: translateY(0);
     }
 }
