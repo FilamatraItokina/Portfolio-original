@@ -39,7 +39,7 @@ body {
     font-family: cursive;
 }
 
-.boiteP {
+#boiteP {
     padding: 0 10px 10px 10px;
     border: solid 2px #046307;
     border-radius: 15px;
@@ -47,6 +47,7 @@ body {
     max-height: 560px;
     overflow-y: auto;
     overflow-x: hidden;
+    box-shadow: 0 16px 40px lightgrey;
 }
 
 .head {
@@ -56,7 +57,7 @@ body {
     animation: introTitre 2s ease-out;
 }
 
-.liens {
+#liens {
     display: flex;
     justify-content: space-between;
     background: #F8F4EB;
