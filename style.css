@@ -250,22 +250,3 @@ img {
     border-radius: 20px;
     margin-top: 20px;
 }
-
-.BoxPara4 {
-    background: transparent;
-    border: solid 1px #046307;
-    padding: 10px 20px 10px 20px;
-    margin-top: 20px;
-    border-radius: 20px;
-}
-
-.Ptitre2 {
-    color: #046307;
-}
-
-.imgFr{
-    background: #046307;
-    border-radius: 20px;
-    display: flex;
-    justify-content: space-evenly;
-}
