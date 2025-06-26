@@ -10,21 +10,128 @@ h1 {
   padding: 20px;
   border-radius: 15px;
   background: #046307;
+  animation: introBoite 2s ease-out;
 }
 
 #p1 {
   font-weight: bold;
   color: #F8F4EB;
   font-size: 26px;
-  animation: fadeIn 2s ease-out;
+  animation: introText 2s ease-out;
 }
-  
-#p1 {
+
+.Principal {
+  margin-top: 10px;
+  max-height: 450px;
+  overflow-y: auto;
+  border: solid 2px #046307;
+  padding: 20px;
+  border-radius: 15px;
+  animation: introDiv 2s ease-out;
+}
+
+h2 {
+  color: #046307;
+}
+
+li{
+  list-style: none;
+  font-weight: bold;
+}
+
+span {
+  font-weight: bold;
+  color: #046307;
+}
+
+.Gtitre {
+  background: transparent;
+  border: solid 1px #046307;
+  padding: 20px;
+  border-radius: 15px;
+  animation: introTitre 2s ease-out;
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  background: #F8F4EB;
+  padding: 15px;
+  border-radius: 15px;
+  border: solid 1px #046307;
+}
+
+a {
+    text-decoration: none;
+    color: #046307;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/*animation*/
+
+@keyframes introTitre {
+  0%{
     opacity: 0;
-    transition: opacity 1s ease-in-out;
-}
-
-#p1.show {
+    transform: translateX(-100px);
+    background: #046307;
+    color: #F8F4EB;
+  }
+  50%{
     opacity: 1;
+    transform: translateX(-50px);
+    background: #046307;
+    color: #F8F4EB;
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0);
+    background: #F8F4EB;
+    color: #046307;
+  }
 }
 
+@keyframes introBoite {
+  0%{
+    opacity: 0;
+    background: #F8F4EB;
+  }
+  50%{
+    opacity: 1;
+    background: #F8F4EB;
+    color: #046307;
+  }
+  100%{
+    opacity: 1;
+    background: #046307;
+  }
+}
+
+@keyframes introText {
+  0%{
+    color: #046307;
+  }
+  50%{
+    color: #046307;
+  }
+  100%{
+    color: #F8F4EB;
+  }
+}
+
+@keyframes introDiv {
+  0%{
+    max-height: 210px;
+    border: solid 0.2px #046307;
+  }
+  40%{
+    border: solid 0.5px #046307;
+  }
+  50%{
+    max-height: 220px;
+    border: solid 2px #046307;
+  }
+  100%{
+    max-height: 450px;
+  }
+}
