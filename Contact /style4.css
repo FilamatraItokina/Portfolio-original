@@ -37,6 +37,7 @@ nav {
   margin-top: 10px;
   max-height: 200px;
   overflow-y: auto;
+  box-shadow: 0 8px 24px lightgrey;
   animation: introBoite 2s ease-out;
 }
 
