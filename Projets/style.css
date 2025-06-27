@@ -1,0 +1,173 @@
+body {
+  background: #F8F4EB;
+}
+
+header {
+  color: #046307;
+  border: solid 1px #046307;
+  padding: 20px;
+  border-radius: 15px;
+  animation: fadeIn 2s ease-out;
+}
+
+nav {
+  background: #F8F4EB;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  border: solid 1px #046307;
+  border-radius: 15px;
+  animation: introLiens 2s ease-out;
+}
+
+a {
+  text-decoration: none;
+  color: #046307;
+  font-weight: bold;
+  font-size: 20px;
+  animation: Liens 2s ease-out;
+}
+
+.boiteP {
+  border: solid 2px #046307;
+  padding: 10px 0 10px 5px;
+  border-radius: 15px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: start;
+  animation: introBoite 2s ease-out;
+  overflow-y: auto;
+}
+
+.img {
+  margin-left: 20px;
+}
+
+img {
+  width: 100px;
+  border-radius: 15px;
+}
+
+p {
+  color: #046307;
+  font-weight: bold;
+}
+
+.a1 {
+  font-weight: normal;
+  color: blue;
+  font-size: 15px;
+}
+
+.pr {
+  margin-top: 10px;
+  background: #046307;
+  padding: 15px;
+  border-radius: 15px;
+  display: grid;
+  justify-content: center;
+  animation: introPr 2s ease-out;
+}
+
+.pr1 {
+  color: #F8F4EB;
+  font-weight: bold;
+  animation: pr1 2s ease-out;
+}
+
+@keyframes fadeIn {
+  0%{
+    opacity: 0;
+    transform: translateX(-100px);
+    background: #046307;
+    color: #F8F4EB;
+  }
+  50%{
+    opacity: 1;
+    transform: translateX(-50px);
+    background: #046307;
+    color: #F8F4EB;
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0);
+    background: #F8F4EB;
+    color: #046307;
+  }
+}
+
+@keyframes introLiens{
+  0%{
+    opacity: 0;
+    transform: translateX(100px);
+    background: #046307;
+    color: #F8F4EB;
+  }
+  50%{
+    opacity: 1;
+    transform: translateX(50px);
+    background: #046307;
+    color: #F8F4EB;
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0);
+    background: #F8F4EB;
+    color: #046307;
+  }
+}
+
+@keyframes Liens {
+  0%{
+    color: #F8F4EB;
+  }
+  50%{
+    color: #F8F4EB;
+  }
+  100%{
+    color: #046307;
+  }
+}
+
+@keyframes introBoite {
+  0%{
+    max-height: 50px;
+  }
+  50%{
+    max-height: 100px;
+  }
+  100%{
+    max-height: 350px;
+  }
+}
+
+@keyframes introPr {
+  0%{
+    background: transparent;
+    border: solid 2px #046307;
+  }
+  50%{
+    background: transparent;
+    border: solid 2px #046307;
+  }
+  100%{
+    margin-top: 10px;
+    background: #046307;
+    padding: 15px;
+    border-radius: 15px;
+    display: grid;
+    justify-content: center;
+  }
+}
+
+@keyframes pr1 {
+  0%{
+    color: #046307;
+  }
+  50%{
+    color: #046307;
+  }
+  100%{
+    color: #F8F4EB;
+  }
+}
